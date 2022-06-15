@@ -1,0 +1,167 @@
+.parentmiddle {
+  height: 91.5vh;
+  width: 95%;
+  overflow-y: auto;
+  background-color: white;
+  scroll-snap-type: y proximity;
+}
+.innerDiv {
+  font-size: 4rem;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 1;
+  background-color: #3a84c6;
+  margin: 1rem;
+  display: flex;
+  height: 97%;
+  scroll-snap-align: start;
+}
+
+.innerimg {
+  display: flex;
+  align-items: end;
+}
+
+.innerimg img {
+  width: 650px;
+  height: auto;
+}
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.innerDiv h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 1;
+  max-width: 680px;
+}
+
+.innerimg p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.arrowdown {
+  width: 225px;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+  max-width: 60px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 20px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+.avatarimg {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 55%;
+}
+
+.avatarimg img {
+  animation: liftup 5s infinite;
+}
+@keyframes liftup {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 90px;
+  }
+
+  100% {
+    margin-bottom: 0px;
+  }
+}
+
+/* timeline css start */
+
+.timeline {
+  width: 30%;
+background-color: #072736;
+color: #fff;
+padding: 45px 20px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+height: 85%;
+}
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid #094a68;
+  padding: 10px 5px;
+}
+.timeline ul li {
+  padding: 0px 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.timeline ul li span {
+  display: inline-block;
+  background-color: #1685b8;
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 19px;
+  text-align: center;
+}
+.timeline ul li .content h3 {
+  color: #34ace0;
+  font-size: 20px;
+  padding-top: 5px;
+}
+.timeline ul li .content p {
+  padding: 5px 0px 15px 0px;
+  font-size: 18px;
+}
+.timeline ul li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #34ace0;
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: 0.5s;
+}
+.timeline ul li:hover {
+  background-color: #071f2a;
+}
+.timeline ul li:hover:before {
+  background-color: #00cfff;
+  box-shadow: 0px 0px 10px 2px #00cfff;
+}
+@media (max-width: 300px) {
+  .timeline {
+    width: 100%;
+    padding: 30px 5px 30px 10px;
+  }
+  .timeline ul li .content h3 {
+    color: #34ace0;
+    font-size: 15px;
+  }
+}
+
+/* timeline css END */
+
+.footer {
+  width: 98%;
+  height: 20%;
+  background: #072736;
+  color: white;
+}

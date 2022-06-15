@@ -1,0 +1,16 @@
+.frame {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: 865px;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: white;
+  width: 92px;
+  
+
+}
+
+.frame a:hover{
+  cursor: pointer;
+}
