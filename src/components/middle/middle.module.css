@@ -11,24 +11,26 @@
   font-family: "Source Code Pro", monospace;
   font-weight: 1;
   background-color: #3a84c6;
-  margin: 1rem;
+  margin: 0px 10px 10px;
   display: flex;
-  height: 97%;
+  height: 99%;
   scroll-snap-align: start;
 }
 
 .innerimg {
   display: flex;
-  align-items: end;
+  align-items: center;
+  width: 50%;
 }
 
 .innerimg img {
-  width: 650px;
+  width: 450px;
   height: auto;
 }
 .text {
   display: flex;
   align-items: center;
+  width: 45%;
 }
 
 .innerDiv h1 {
@@ -36,7 +38,7 @@
   color: white;
   font-family: "Source Code Pro", monospace;
   font-weight: 1;
-  max-width: 680px;
+  max-width: 70%;
 }
 
 .innerimg p {
@@ -44,7 +46,7 @@
 }
 
 .arrowdown {
-  width: 225px;
+  width: 5%;
   font-size: 2.5rem;
   color: white;
   display: flex;
@@ -52,6 +54,10 @@
   flex-direction: row;
   max-width: 60px;
   animation: jumpInfinite 1.5s infinite;
+}
+
+.arrow{
+  cursor: pointer;
 }
 
 @keyframes jumpInfinite {
@@ -74,6 +80,14 @@
   width: 55%;
 }
 
+.middlediv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .avatarimg img {
   animation: liftup 5s infinite;
 }
@@ -94,11 +108,11 @@
 
 .timeline {
   width: 30%;
-background-color: #072736;
-color: #fff;
-padding: 45px 20px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-height: 85%;
+  background-color: #072736;
+  color: #fff;
+  padding: 45px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 85%;
 }
 .timeline ul {
   list-style-type: none;
@@ -136,7 +150,7 @@ height: 85%;
   background-color: #34ace0;
   border-radius: 50%;
   left: -11px;
-  top: 28px;
+  top: 50px;
   transition: 0.5s;
 }
 .timeline ul li:hover {

@@ -1,9 +1,11 @@
 import React from 'react'
 import classes from './middle.module.css'
-import geekavatar from '../../images/guy.png'
+import geekavatar from '../../images/blogging.png'
 import geekavatar1 from '../../images/me-light.png'
 
-import { FaArrowDown } from 'react-icons/fa'
+
+
+import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
 
 function Middle() {
@@ -21,7 +23,7 @@ function Middle() {
             </h1>
           </div>
           <div className={classes.arrowdown}>
-            <FaArrowDown />
+            <IoIosArrowDropdownCircle className={classes.arrow}/>
           </div>
           <div className={classes.innerimg}>
             <img src={geekavatar} alt="" />
@@ -30,16 +32,17 @@ function Middle() {
         </div>
 
         <div className={classes.innerDiv}>
+          <div className={classes.middlediv}>
+            <h1>Work Experience</h1>
 
-          <div className={classes.avatarimg}>
-          <h1>Work Experience</h1>
+            <div className={classes.avatarimg}>
 
-            <img src={geekavatar1} />
-            
+              <img src={geekavatar1} />
+
+
+            </div>
+
           </div>
-
-
-
 
           <div className={classes.timeline}>
             <ul>
@@ -83,13 +86,9 @@ function Middle() {
           </div>
         </div>
 
-
-
-
-
-
         <div className={classes.innerDiv}>
           hii
+
         </div>
 
         <div className={classes.innerDiv}>

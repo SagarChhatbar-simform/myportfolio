@@ -10,8 +10,6 @@ function Social() {
                 <a href='#facebook'><FaFacebook /></a>
                 <a href='#instagram'><FaInstagram /></a>
                 <a href='#Github'><FaGithub /></a>
-
-            
         </div>
     )
 }

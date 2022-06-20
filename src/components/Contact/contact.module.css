@@ -1,0 +1,19 @@
+.innerDiv {
+    font-size: 4rem;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 1;
+    background-color: #3a84c6;
+    margin: 0px 10px 10px;
+    display: flex;
+    height: 98%;
+    scroll-snap-align: start;
+  }
+
+  .parentmiddle {
+    height: 91.5vh;
+    width: 95%;
+    overflow-y: auto;
+    background-color: white;
+    scroll-snap-type: y proximity;
+  }
