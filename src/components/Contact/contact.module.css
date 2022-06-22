@@ -1,19 +1,64 @@
 .innerDiv {
-    font-size: 4rem;
-    color: white;
-    font-family: "Source Code Pro", monospace;
-    font-weight: 1;
-    background-color: #3a84c6;
-    margin: 0px 10px 10px;
-    display: flex;
-    height: 98%;
-    scroll-snap-align: start;
-  }
+  font-size: 4rem;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 1;
+  background-color: #3a84c6;
+  margin: 0px 10px 10px;
+  display: flex;
+  height: 98%;
+  scroll-snap-align: start;
+  align-items: center;
+}
 
-  .parentmiddle {
-    height: 91.5vh;
-    width: 95%;
-    overflow-y: auto;
-    background-color: white;
-    scroll-snap-type: y proximity;
-  }
+.innerDiv img {
+  width: 40%;
+}
+
+.parentmiddle {
+  height: 92.3vh;
+  width: 95%;
+  overflow-y: auto;
+  background-color: white;
+  scroll-snap-type: y proximity;
+}
+
+.formstyle {
+  font-size: 1rem;
+  padding: 51px;
+  height: 720px;
+  width: 40%;
+}
+
+.formstyle form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.formstyle button {
+  padding: 20px;
+  background-color: #072736;
+  border: 1px solid #072736;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.formstyle button:hover {
+  background-color: #3a84c6;
+}
+
+.formstyle input {
+  padding: 3px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.formstyle textarea {
+  padding: 3px;
+  font-size: 2rem;
+  text-align: left;
+  width: 100%;
+}

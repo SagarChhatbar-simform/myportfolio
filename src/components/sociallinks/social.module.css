@@ -1,13 +1,13 @@
 .frame {
   float: left;
-  display: flex;
-  flex-direction: column;
-  height: 865px;
-  justify-content: space-around;
-  font-size: 2rem;
-  color: white;
-  background-color:#3a84c6 ;
-  width: 92px;
+display: flex;
+flex-direction: column;
+height: 90.5vh;
+justify-content: space-around;
+font-size: 2rem;
+color: white;
+background-color: #3a84c6;
+width: 92px;
   
 
 }

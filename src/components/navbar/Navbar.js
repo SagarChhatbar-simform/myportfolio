@@ -23,10 +23,10 @@ function Navbar() {
             <b>React Developer</b>
           </div>
           <div className={classes.linkbar}>
-            <Link to='/'>HOME</Link>
-            <Link to='/Work'>WORK</Link>
-            <Link to='/Projects'>PROJECTS</Link>
-            <Link to='/Articles'>ARTICLES</Link>
+            <a href='/#section1'>HOME</a>
+            <a href='/#section2'>WORK</a>
+            <a href='/#section3'>PROJECTS</a>
+            <a href='/#section4'>ARTICLES</a>
             <Link to='/Contact'>CONTACT</Link>
             {!darkmode && <FaMoon className={classes.darkicon} onClick={darkmodehandler} />}
             {darkmode && <FaSun className={classes.darkicon} onClick={darkmodehandler} />}

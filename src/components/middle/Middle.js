@@ -15,7 +15,7 @@ function Middle() {
 
       <div className={classes.parentmiddle}>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section1'>
           <div className={classes.text}>
             <h1>
               <p>HELLO, I AM SAGAR CHHATBAR</p>
@@ -23,7 +23,7 @@ function Middle() {
             </h1>
           </div>
           <div className={classes.arrowdown}>
-            <IoIosArrowDropdownCircle className={classes.arrow}/>
+            <a href='#section2'><IoIosArrowDropdownCircle  className={classes.arrow}/></a>
           </div>
           <div className={classes.innerimg}>
             <img src={geekavatar} alt="" />
@@ -31,7 +31,7 @@ function Middle() {
 
         </div>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section2'>
           <div className={classes.middlediv}>
             <h1>Work Experience</h1>
 
@@ -86,12 +86,12 @@ function Middle() {
           </div>
         </div>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section3'>
           hii
 
         </div>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section4'>
           hii
         </div>
 

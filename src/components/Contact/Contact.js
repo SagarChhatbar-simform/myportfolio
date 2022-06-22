@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import Social from '../sociallinks/Social'
 import classes from './contact.module.css'
+import formimg from '../../images/form.png'
+
 function Contact() {
   return (
     <React.Fragment>
@@ -9,20 +11,28 @@ function Contact() {
       <Social />
       <div className={classes.parentmiddle}>
         <div className={classes.innerDiv}>
-          <form>
-            <div>
-              <div>
-                Name
-                <input type='text' placeholder='Name' />
-                Email
-                <input type='email' placeholder='Email' />
-              </div>
-              Subject
+          <img src={formimg} />
+
+          <div className={classes.formstyle}>
+            <form>
+              <h1>Contact Me</h1>
+              <input type='text' placeholder='Name' />
+              
+
+              <input type='email' placeholder='Email' />
+
+             
+
               <input type='text' placeholder='Subject' />
-              Message
+
+              
               <textarea placeholder='Message' />
-            </div>
-          </form>
+
+
+              <button>Submit</button>
+            </form>
+          </div>
+
         </div>
       </div>
     </React.Fragment>
