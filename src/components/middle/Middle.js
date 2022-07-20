@@ -2,14 +2,10 @@ import React from 'react'
 import classes from './middle.module.css'
 import geekavatar from '../../images/blogging.png'
 import geekavatar1 from '../../images/me-light.png'
-import flipcart from '../../images/flip.png'
+// import flipcart from '../../images/flip.png'
 import { useSelector, useDispatch} from 'react-redux';
-import {darkActions} from '../../store/darmodeReducer';
+import {darkActions} from '../../store/darkmodeReducer';
 import { useEffect } from 'react'
-
-
-// #2d475e
-
 
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
@@ -105,7 +101,7 @@ function Middle() {
         <div className={classes.innerDiv} id='section3'>
           <div className={classes.parentproject}>
             <div className={classes.project1}>
-              <img src={flipcart} />
+              {/* <img src={flipcart} /> */}
               <div className={classes.descrip}>
                 <div className={classes.project_name}>
                  FlipKart Clone 
@@ -130,11 +126,11 @@ function Middle() {
                   HTML CSS JAVASCRIPT
                 </div>
               </div>
-              <img src={flipcart} />
+              {/* <img src={flipcart} /> */}
 
             </div>
             <div className={classes.project1}>
-              <img src={flipcart} />
+              {/* <img src={flipcart} /> */}
               <div className={classes.descrip}>
                 <div className={classes.project_name}>
                  FlipKart Clone 
