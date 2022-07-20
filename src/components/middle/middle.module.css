@@ -1,11 +1,16 @@
+#section1{}
+#section2{}
+#section3{}
+#section4{}
+
+
 .parentmiddle {
-  height: 91.5vh;
+  height: 90.8vh;
   width: 95%;
   overflow-y: auto;
   background-color: white;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
-
 }
 .innerDiv {
   font-size: 4rem;
@@ -58,7 +63,7 @@
   animation: jumpInfinite 1.5s infinite;
 }
 
-.arrow{
+.arrow {
   cursor: pointer;
 }
 
@@ -181,3 +186,52 @@
   background: #072736;
   color: white;
 }
+
+/* project area  */
+
+.project1 {
+  display: flex;
+  justify-content: center;
+  margin: 13px;
+}
+
+.project1 img {
+  width: 30%;
+  margin: 0;
+}
+
+.parentproject{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.descrip {
+  margin: 0px -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.project_dec {
+  width: 540px;
+  background-color: #071f2a;
+  font-size: 1rem;
+  padding: 35px;
+  text-align: left;
+}
+
+.project_name {
+  font-size: 2rem;
+  width: 100%;
+
+}
+.project_tec {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+
+

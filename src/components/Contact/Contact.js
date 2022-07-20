@@ -3,8 +3,21 @@ import Navbar from '../navbar/Navbar'
 import Social from '../sociallinks/Social'
 import classes from './contact.module.css'
 import formimg from '../../images/form.png'
+import { useSelector} from 'react-redux';
+import { useEffect } from 'react'
+
 
 function Contact() {
+
+  const dark = useSelector(state=>state.darkmode.darkmode);
+
+  useEffect(() => {
+      //changing color of body with darkmode in useEffect
+      document.getElementsByClassName(classes.innerDiv)[0].style.backgroundColor = dark ? "rgb(29, 71, 98)" : "#3a84c6";
+
+  
+    }, [dark]);
+
   return (
     <React.Fragment>
       <Navbar />
