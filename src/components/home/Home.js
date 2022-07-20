@@ -1,11 +1,18 @@
 import React from 'react'
+import Middle from '../middle/Middle'
 import Navbar from '../navbar/Navbar'
+import Social from '../sociallinks/Social'
+import classes from './Home.module.css'
 
 function Home() {
   return (
-    <React.Fragment>
-      <Navbar />
-    </React.Fragment>
+    <div className={classes.container}>
+      <div className={classes.middleParent}>
+        <Navbar />
+        <Social />
+        <Middle />
+      </div>
+    </div>
   )
 }
 

@@ -1,15 +1,18 @@
 .frame {
   float: left;
-  display: flex;
-  flex-direction: column;
-  height: 865px;
-  justify-content: space-around;
-  font-size: 2rem;
-  color: white;
-  width: 92px;
+display: flex;
+flex-direction: column;
+height: 89.8vh;
+justify-content: space-around;
+font-size: 2rem;
+color: white;
+background-color: #3a84c6;
+width: 92px;
   
 
 }
+
+#frame{}
 
 .frame a:hover{
   cursor: pointer;

@@ -1,19 +1,37 @@
 import React from 'react'
 import classes from './middle.module.css'
-import geekavatar from '../../images/guy.png'
+import geekavatar from '../../images/blogging.png'
 import geekavatar1 from '../../images/me-light.png'
+import flipcart from '../../images/flip.png'
+import { useSelector, useDispatch} from 'react-redux';
+import {darkActions} from '../../store/darmodeReducer';
+import { useEffect } from 'react'
 
-import { FaArrowDown } from 'react-icons/fa'
+
+// #2d475e
+
+
+import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
 
 function Middle() {
+
+  
+  const dark = useSelector(state=>state.darkmode.darkmode);
+
+  useEffect(() => {
+    //changing color of body with darkmode in useEffect
+    document.getElementsByClassName(classes.innerDiv)[0].style.backgroundColor = dark ? "rgb(29, 71, 98)" : "#3a84c6";
+    document.getElementsByClassName(classes.innerDiv)[1].style.backgroundColor = dark ? "rgb(29, 71, 98)" : "#3a84c6";
+    document.getElementsByClassName(classes.innerDiv)[2].style.backgroundColor = dark ? "rgb(29, 71, 98)" : "#3a84c6";
+    document.getElementsByClassName(classes.innerDiv)[3].style.backgroundColor = dark ? "rgb(29, 71, 98)" : "#3a84c6";
+  }, [dark]);
   return (
 
     <React.Fragment>
 
       <div className={classes.parentmiddle}>
-
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section1'>
           <div className={classes.text}>
             <h1>
               <p>HELLO, I AM SAGAR CHHATBAR</p>
@@ -21,7 +39,7 @@ function Middle() {
             </h1>
           </div>
           <div className={classes.arrowdown}>
-            <FaArrowDown />
+            <a href='#section2'><IoIosArrowDropdownCircle className={classes.arrow} /></a>
           </div>
           <div className={classes.innerimg}>
             <img src={geekavatar} alt="" />
@@ -29,17 +47,18 @@ function Middle() {
 
         </div>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section2'>
+          <div className={classes.middlediv}>
+            <h1>Work Experience</h1>
 
-          <div className={classes.avatarimg}>
-          <h1>Work Experience</h1>
+            <div className={classes.avatarimg}>
 
-            <img src={geekavatar1} />
-            
+              <img src={geekavatar1} />
+
+
+            </div>
+
           </div>
-
-
-
 
           <div className={classes.timeline}>
             <ul>
@@ -83,16 +102,55 @@ function Middle() {
           </div>
         </div>
 
+        <div className={classes.innerDiv} id='section3'>
+          <div className={classes.parentproject}>
+            <div className={classes.project1}>
+              <img src={flipcart} />
+              <div className={classes.descrip}>
+                <div className={classes.project_name}>
+                 FlipKart Clone 
+                </div>
+                <div className={classes.project_dec}>
+                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                </div>
+                <div className={classes.project_tec}>
+                  HTML CSS JAVASCRIPT
+                </div>
+              </div>
+            </div>
+            <div className={classes.project1}>
+              <div className={classes.descrip}>
+                <div className={classes.project_name}>
+                 FlipKart Clone 
+                </div>
+                <div className={classes.project_dec}>
+                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                </div>
+                <div className={classes.project_tec}>
+                  HTML CSS JAVASCRIPT
+                </div>
+              </div>
+              <img src={flipcart} />
 
-
-
-
-
-        <div className={classes.innerDiv}>
-          hii
+            </div>
+            <div className={classes.project1}>
+              <img src={flipcart} />
+              <div className={classes.descrip}>
+                <div className={classes.project_name}>
+                 FlipKart Clone 
+                </div>
+                <div className={classes.project_dec}>
+                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                </div>
+                <div className={classes.project_tec}>
+                  HTML CSS JAVASCRIPT
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className={classes.innerDiv}>
+        <div className={classes.innerDiv} id='section4'>
           hii
         </div>
 

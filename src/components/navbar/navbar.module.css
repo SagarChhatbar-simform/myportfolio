@@ -1,10 +1,5 @@
-.container {
-  max-width: 1848px;
-}
-
-.middleParent {
-  height: 100vh;
-  background-color: #3a84c6;
+#dark{
+  background-color: #072736;
 }
 
 .title {
@@ -40,22 +35,9 @@
   position: relative;
 }
 .hnav a:hover {
-  color: #072736;
+  text-decoration: overline;
 }
 
-.hnav a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #072736;
-
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
 
 .hnav a:hover:after {
   transform: scaleX(1);
