@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import reactlogo from '../../images/react.png'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch} from 'react-redux';
-import {darkActions} from '../../store/darmodeReducer';
+import {darkmodeActions} from '../../store/darkmodeReducer';
 
 function Navbar() {
   
@@ -15,7 +15,7 @@ function Navbar() {
   // console.log(dark);
 
   const darkmodehandler = () => {
-    dispatch(darkActions.toggledarkmode());
+    dispatch(darkmodeActions.toggleDarkmode());
   }
   useEffect(() => {
     //changing color of body with darkmode in useEffect
